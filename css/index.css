@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: rgba(89, 185, 230, 0.301);
+}
+header {
+  background: linear-gradient(to right, #000000fd, #4c6fe26c);/*สีซ้ายไปขวา*/
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px black;
+  padding: 3rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  backdrop-filter: blur(10px);
+
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 2rem;
+  border: 2px solid rgb(252, 251, 251);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  background-color: rgba(7, 48, 182, 0.514);
+  display: inline-block;
+  transition: transform 0.25s ease, background-color 0.25s ease, box-shadow 0.25s ease;
+  user-select: none;
+  cursor: pointer;
+}
+nav a:hover {
+  background-color: rgb(244, 248, 248);
+  color: rgb(2, 2, 2);
+  transition: transform 0.25s;
+  user-select: none;transform: translateY(-7px);
+  box-shadow: 0 6px 14px gray;
+}
+.header{
+    font-size: 1.85rem;
+}
+/* ------------------------- main ---------------------------------- */
+.content {
+  margin: 20px 10px;
+}
+.head {
+  display: grid;
+  grid-template-columns: 1.5fr 0.5fr;
+  gap: 20px;
+  align-items: center;                 
+  background: linear-gradient(100deg, rgb(2, 1, 17), rgba(110, 146, 243, 0.493));
+  border-radius: 10px;
+  padding: 24px 36px;
+  box-shadow: 3px 5px 10px rgba(0,0,0,0.2);
+  color: white;
+}
+.head h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+.head h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+.head p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: rgb(197, 194, 194);
+  max-width: 1000px;
+}
+.head img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+}
+/* ------------------------- art-gard ---------------------------------- */
+.about-grid {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  
+}
+.about, .skills, .contact, .projects {
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.projects-grid {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.projects-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+/* ------------------------- footer ---------------------------------- */
+footer {
+  background: black;
+  padding: 3rem;
+  color: white;
+  text-align: center;
+  margin-top: 1.5rem;
+}
