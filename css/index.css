@@ -11,7 +11,7 @@ body {
   background-color: rgba(89, 185, 230, 0.301);
 }
 header {
-  background: linear-gradient(to right, #000000fd, #4c6fe26c);/*สีซ้ายไปขวา*/
+  background: linear-gradient(to right, #000000fd, #4c6fe26c);
   color: white;
   display: flex;
   justify-content: space-between;
@@ -82,6 +82,8 @@ nav a:hover {
   height: auto;
   border-radius: 10px;
   display: block;
+  margin: 0 auto;
+  border: 5px solid rgb(10, 47, 170);
 }
 /* ------------------------- art-gard ---------------------------------- */
 .about-grid {
@@ -89,7 +91,6 @@ nav a:hover {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  
 }
 .about, .skills, .contact, .projects {
   border: 2px solid rgba(0, 0, 0, 0.1);
@@ -115,4 +116,47 @@ footer {
   color: white;
   text-align: center;
   margin-top: 1.5rem;
+}
+/* ------------------- media -------------------- */
+@media (max-width: 441px) {
+    header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1.2rem 1rem;
+        gap: 15px;
+        height: auto;
+    }
+    .header {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    nav {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        width: 100%;
+        max-width: 300px;
+    }
+    nav a {
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    .head{
+        grid-template-columns: 1fr;
+    }
+    .about-grid {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .projects-grid {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
 }
