@@ -12,6 +12,7 @@
     border: 5px solid rgb(10, 47, 170);
     object-fit: cover;
 }
+/* ---------------------------description------------------------------ */
 .description{
     border: 3px solid rgb(10, 47, 170);
     margin: 1rem;
@@ -32,7 +33,7 @@
     padding: 0.5rem 3rem;
     font-size: 16px;
 }
-/* ------------------- media -------------------- */
+/* ---------------------------responsive------------------------------ */
 @media (max-width: 441px){
     .colum{
         grid-template-columns: 1fr;

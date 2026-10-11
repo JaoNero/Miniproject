@@ -10,6 +10,7 @@ body {
   font-family: 'Poppins', sans-serif;
   background-color: rgba(89, 185, 230, 0.301);
 }
+/* ---------------------------header------------------------------ */
 header {
   background: linear-gradient(to right, #000000fd, #4c6fe26c);
   color: white;
@@ -22,8 +23,10 @@ header {
   top: 0;
   z-index: 999;
   backdrop-filter: blur(10px);
-
+}.header{
+    font-size: 1.85rem;
 }
+/* ---------------------------nav------------------------------ */
 nav a {
   color: white;
   text-decoration: none;
@@ -43,9 +46,6 @@ nav a:hover {
   transition: transform 0.25s;
   user-select: none;transform: translateY(-7px);
   box-shadow: 0 6px 14px gray;
-}
-.header{
-    font-size: 1.85rem;
 }
 /* ------------------------- main ---------------------------------- */
 .content {
@@ -85,7 +85,7 @@ nav a:hover {
   margin: 0 auto;
   border: 5px solid rgb(10, 47, 170);
 }
-/* ------------------------- art-gard ---------------------------------- */
+/* ------------------------- art-grid ---------------------------------- */
 .about-grid {
   margin-top: 20px;
   display: grid;
@@ -117,7 +117,7 @@ footer {
   text-align: center;
   margin-top: 1.5rem;
 }
-/* ------------------- media -------------------- */
+/* ---------------------------responsive------------------------------ */
 @media (max-width: 441px) {
     header {
         flex-direction: column;
